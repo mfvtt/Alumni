@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Fénelon Sainte-Marie</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+</head>
+<body>
+  <div id="burger">&#9776;</div>
+  <div id="sidebar" class="open">
+    <h2>Alumni</h2>
+    <label for="searchInput"><strong>Rechercher un alumni</strong></label>
+    <input type="text" id="searchInput" placeholder="Nom, ville, école, promo..." />
+    <div id="filters">
+      <select id="filterPromo"><option value="">Promo</option></select>
+      <select id="filterVille"><option value="">Ville</option></select>
+      <select id="filterEtablissement"><option value="">Établissement</option></select>
+      <select id="filterFiliere"><option value="">Filière</option></select>
+    </div>
+    <ul id="alumniList"></ul>
+  </div>
+  <div id="map"></div>
+
+  <!-- Bouton unique -->
+  <button id="helpButton">Aide</button>
+
+  <!-- Grande popup unique -->
+  <div id="helpPopup" class="hidden">
+    <div id="helpPopupContent">
+      <span id="closeHelpPopup">&times;</span>
+      <h3>Ajouter une classe</h3>
+      <p>
+        Coucou mes loulous, si vous souhaitez ajouter votre classe à cette base de donnée, suivez les instructions suivantes.<br><br>
+        Envoyez-moi un fichier Excel ou Google Sheets (le premier qui m'envoie un tableau dans un Google Doc je reviens à FSM le kholler) avec le format indiqué.<br><br>
+        Il est conseillé de faire un document partagé pour rendre la tâche moins fastidieuse aux Z et vZ (ou K et vK...).<br><br>
+        Bon courage et envoyez-moi un message si vous avez besoin de précisions, gardez le smile!!!<br><br>
+        Pour tout ça, contactez <span id="gotoKarl"><strong>Karl RICHARD</strong></span>.
+      </p>
+      <img src="ajout_excel.png" alt="Exemple Excel" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
