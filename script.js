@@ -116,7 +116,7 @@ document.getElementById('gotoKarl').addEventListener('click', () => {
   map.setView([44.80562, -0.604816], 14);
 });
 
-fetch("https://script.google.com/macros/s/AKfycbxJjaKN27sdqPunjfqEFi6pIAH5TqtiiCwHem6J0jBL3qy4x34v0ZY2BkI3ixh0IRrU/exec")
+fetch("https://script.google.com/macros/s/AKfycbyaSx6xwd-SHbj6k1ux7kFatO4yldh-0x4LcOXP404-a3SuHR5yBnqMIpd11rBLXWRD/exec")
   .then(res => res.json())
   .then(data => {
     alumniData = data;
